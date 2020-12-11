@@ -22,6 +22,7 @@
 
 <body style="background-color: rgb(153, 149, 145);">
 
+    <!-- Create a navigation bar-->
     <nav class="navbar navbar-inverse">
         <div class="container-fluid navbar-custom">
 
@@ -36,6 +37,22 @@
                     <div class="col-xs-9 phone nav">
                         <a class="navbar-brand" href=# id="logo">Lattitude</a>
                     </div>
+                </div>
+
+                <!-- Group the links-->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                   <ul class="nav navbar-nav navbar-right navbar-right-custom">
+                       <li class="dropdown">
+                           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                                aria-expanded="False">Plots <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="Resources/temperature.html">Max Temperature</a></li>
+                                <li><a href="Resources/humidity.html">Humidity</a></li>
+                                <li><a href="Resources/cloudiness.html">Cloudiness</a></li>
+                                <li><a href="Resources/wind_speed.html">Wind Speed</a></li>  
+                            </ul>
+                       </li>
+                   </ul> 
                 </div>
             </div>
 
