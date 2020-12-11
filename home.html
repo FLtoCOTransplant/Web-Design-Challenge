@@ -23,7 +23,7 @@
 <body style="background-color: rgb(153, 149, 145);">
 
     <!-- Create a navigation bar-->
-    <nav class="navbar navbar-inverse">
+    <nav class="navbar navbar-default">
         <div class="container-fluid navbar-custom">
 
             <div class="row">
@@ -35,7 +35,7 @@
                     <span class="icon-bar"></span>
                     </button>
                     <div class="col-xs-9 phone nav">
-                        <a class="navbar-brand" href=# id="logo">Lattitude</a>
+                        <a class="navbar-brand" href=# id="logo">Home</a>
                     </div>
                 </div>
 
@@ -58,7 +58,25 @@
                 </div><!-- /.navbar collapse-->
             </div>
         </div><!-- /.container-fluid-->
-    </nav>
+    </nav><!-- End of Nav Bar-->
+
+    <!-- Start of Analysis Presentation -->
+    <div class="container">
+        <section class="row">
+            <div class="col-lg-8 col-md-8 col-sm-6 col-xm-12">
+                <article class="description-content">
+                    <h1 class="description-header">Impact of Latitude on Weather</h1>
+                    <hr class="description-hr" />
+                    <img src="Resources/assets/images/lat_v_temp.png" alt="latitude versus temperature" id="description-image" />
+                    <p>How does latitude impact observed temperature?  In a previous project we looked at a random data set
+                        of over 500 cities across the globe to view for ourselves the results.  This data came from 
+                        OpenWeatherMap and we accessed it through their API.</p>
+                    <p>Once we had downloaded the data (making sure to not hit the API too frequently, we sliced and diced
+                        the data and plotted it utilizing Matplotlib.  Along with temperature, we looked at humidity, 
+                        cloudiness and wind speed. 
+                    </thead></p>
+                </article>
+            </div>
 
 
 
