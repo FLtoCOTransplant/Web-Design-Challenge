@@ -8,4 +8,6 @@ data we researched in a previous project on APIs and weather and created a websi
 
 earth's latitude on various elements of the weather.
 
-![](resources/assets/images/lat_v_cloud.png)
+![](Resources/assets/images/lat_v_cloud.png)
+
+There are several things I would like to improve upon for the future...1) My navigation bar does not work as anticipated 2) How to center a text 3) I would like my comparison plots to be smaller
