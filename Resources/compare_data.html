@@ -1,24 +1,23 @@
 <!DOCTYPE html>
 <html lang="en-us">
 
-<head>
-  ​
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  ​
-  <title>Bootstrap Visualization Dashboard</title>
+  <head>
 
-  <!-- Boostrap Stylesheet -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-  <!-- CSS stylesheet -->
-  <link rel="stylesheet" href="Resources/styles.css" media="screen">
-  ​
-</head>
+    <title>Bootstrap Visualization Dashboard</title>
 
-<body style="background-color: rgb(153, 149, 145);"></body>
+    <!-- Boostrap Stylesheet -->
+    <link rel="stylesheet" href="Resources/bootstrap.min.css" media="screen">
+
+    <!-- Our own CSS stylesheet -->
+    <link rel="stylesheet" href="Resources/styles.css" media="screen">
+
+  </head>
+
+  <body style="background-color: rgb(153, 149, 145);"></body>
     <!-- define navigation bar -->
     <nav class="navbar navbar-default">
       <div class="container-fluid navbar-custom">
@@ -37,7 +36,7 @@
             </div>
           </div>
 
-          <!-- collect the naviation bar links and forms -->
+          <!-- collect the navigation bar links and forms -->
           <div class="collapse navbar-collapse" id="navbar-collapse-1">
             <ul class="nav navbar-nav navbar-right navbar-right-custom">
               <li class="dropdown">
@@ -49,7 +48,6 @@
                   <li><a href="wind.html">Wind Speed</a></li>
                 </ul>
               </li>
-              <li><a href="compare_data.html">Comparison</a></li>
               <li><a href="cities.html">Data</a></li>
             </ul>
           </div><!-- /.navbar-collapse -->
@@ -57,6 +55,49 @@
       </div><!-- /.container-fluid -->
     </nav>
     <!-- navigation bar finished -->
+
+    <!-- Start of container -->
+ <div class="container">
+  <section class="row">
+    <div>
+      <div class="description-content">
+        <h1 class="description-header">Comparison: Latitude vs X</h1>
+        <hr>
+  <p style="font-style:italic; color:rgb(39, 10, 168); text-align: center;font-weight: bold;">Click on any plot for more analysis.</p>
+        <div class="container" style="padding-bottom: 40px;">
+    <div class="row">
+    <div class="col-lg-6" style="padding: 20px;">
+      <div class="imageNav-header">vs. Max Temperature</div>
+              <a href="temperature.html">
+        <img src="assets/images/lat_v_temp.png" alt="Latitude vs. Max Temperature", title="Latitude vs. Max Temperature" class="imageNav-photo">
+      </a>
+    </div>
+    <div class="col-lg-6" style="padding: 20px;">
+      <div class="imageNav-header">vs. Max Humidity</div>
+              <a href="humidity.html">
+        <img src="assets/images/lat_v_hum.png" alt="Latitude vs. Humidity", title="Latitude vs. Humidity" class="imageNav-photo">
+        </a>
+    </div>
+    <div class="col-lg-6" style="padding: 20px;">
+      <div class="imageNav-header">vs. Cloudiness</div>
+              <a href="cloudiness.html">
+        <img src="assets/images/lat_v_cloud.png" alt="Latitude vs. Cloudiness", title="Latitude vs. Cloudiness", class="imageNav-photo">
+      </a>
+    </div>
+    <div class="col-lg-6" style="padding: 20px;">
+      <div class="imageNav-header">vs. Wind Speed</div>
+              <a href="wind.html">
+        <img src="assets/images/lat_v_wind.png" alt="Latitude vs. Wind Speed", title="Latitude vs. Wind Speed", class="imageNav-photo">
+      </a>
+    </div>
+          </div>
+  </div>
+      </div>
+
+    </div>
+  </section>
+</div>
+<!-- End of container -->
 
     <!-- Footer -->
   <footer class="footer navbar-fixed-bottom">
